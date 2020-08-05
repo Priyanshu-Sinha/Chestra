@@ -9,18 +9,18 @@ document.querySelector('#play')?.addEventListener('click', async () => {
 	  console.log('audio is ready')
     Tone.Transport.start()
     playCheck = "stop"
-    document.getElementById('play').src = "rec-stop.png"
+    document.getElementById('play').src = "./Logos-and-ill./rec-stop.png"
   } else {
     Tone.Transport.stop()
     playCheck = "play"
-    document.getElementById('play').src = "rec.png"
+    document.getElementById('play').src = "./Logos-and-ill./rec.png"
   }
 })
 function sequencer() {
-  const kick = new Tone.Player("kick-08.wav").toDestination();
-  const clap = new Tone.Player("clap-for-production-9_B_minor.wav").toDestination();
-  const chat = new Tone.Player("closed-hat.wav").toDestination();
-  const ohat = new Tone.Player("a-classic-open-hi-hat.wav").toDestination();
+  const kick = new Tone.Player("./Drums/kick.wav").toDestination();
+  const clap = new Tone.Player("./Drums/clap.wav").toDestination();
+  const chat = new Tone.Player("./Drums/closed-hat.wav").toDestination();
+  const ohat = new Tone.Player("./Drums/opened-hat.wav").toDestination();
   let index = 0;
 
   Tone.Transport.scheduleRepeat(repeat, "16n");
