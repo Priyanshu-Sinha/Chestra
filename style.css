@@ -148,3 +148,23 @@ input[type="range"]::-webkit-slider-thumb {
     top: 10vh;
     left: 70vh;
 }
+footer{
+    position: fixed;
+    height: 45px;
+    width: 180vh;
+    bottom: 0vh;
+    background-color: #1b1b42;
+    border-top: 0.5px solid rgba(0, 0, 0, 0.2);
+    vertical-align: baseline;
+}
+#foot{
+    position: relative;
+    font-size: 14px;
+    color: silver;
+    left: 60px;
+    top: 2px;
+}
+#mail{
+    position: relative;
+    left: 950px;
+}
