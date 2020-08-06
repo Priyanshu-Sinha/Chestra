@@ -22,8 +22,8 @@ input[type=checkbox]{
 }
 #logo{
     position: absolute;
-    width: 400px;
-    height: 290px;
+    width: 380px;
+    height: 270px;
     top: 0px;
 }
 .drums{
@@ -147,6 +147,22 @@ input[type="range"]::-webkit-slider-thumb {
     position: absolute;
     top: 10vh;
     left: 70vh;
+}
+.off-speaker{
+    position: absolute;
+    height: 200px;
+    width: 200px;
+}
+.on-speaker{
+    position: absolute;
+    height: 200px;
+    width: 320px;
+}
+#off{
+    display: block;
+}
+#on{
+    display: none;
 }
 footer{
     position: fixed;

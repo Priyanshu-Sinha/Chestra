@@ -10,10 +10,14 @@ document.querySelector('#play')?.addEventListener('click', async () => {
     Tone.Transport.start()
     playCheck = "stop"
     document.getElementById('play').src = "./Logos-and-ill./rec-stop.png"
+    document.getElementById('off').style.display = "none"
+    document.getElementById('on').style.display = "block"
   } else {
     Tone.Transport.stop()
     playCheck = "play"
     document.getElementById('play').src = "./Logos-and-ill./rec.png"
+    document.getElementById('on').style.display = "none"
+    document.getElementById('off').style.display = "block"
   }
 })
 function sequencer() {
