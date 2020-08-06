@@ -57,7 +57,6 @@ function sequencer() {
   slider.oninput = function() {
   output.innerHTML = this.value;
   Tone.Transport.bpm.value = this.value;
+  }
 }
-}
-
 sequencer();
