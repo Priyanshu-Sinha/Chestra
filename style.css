@@ -46,6 +46,17 @@ input[type=checkbox]{
     animation-duration: 1s;
     animation-iteration-count: infinite;
 }
+#inst{
+    position: absolute;
+    top: 2vh;
+    right: 10vh;
+    width: 300px;
+    font-size: 25px;
+    text-align: center;
+    padding: 10px;
+    background-color: #f0e664;
+    border-radius: 20px;
+}
 .ohat{
     position: relative;
     width: 860px;
@@ -178,6 +189,19 @@ input[type="range"]::-webkit-slider-thumb {
 }
 #on{
     display: none;
+}
+.dec{
+    position: absolute;
+    height: 421px;
+    width: 200px;
+}
+.left{
+    left: 1vh;
+    bottom: 5vh;
+}
+.right{
+    right: 1vh;
+    bottom: 5vh;
 }
 footer{
     position: fixed;
