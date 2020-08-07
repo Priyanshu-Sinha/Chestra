@@ -12,12 +12,14 @@ document.querySelector('#play')?.addEventListener('click', async () => {
     document.getElementById('play').src = "./Logos-and-ill./rec-stop.png"
     document.getElementById('off').style.display = "none"
     document.getElementById('on').style.display = "block"
+    document.getElementById('player').style.animationName = "player"
   } else {
     Tone.Transport.stop()
     playCheck = "play"
     document.getElementById('play').src = "./Logos-and-ill./rec.png"
     document.getElementById('on').style.display = "none"
     document.getElementById('off').style.display = "block"
+    document.getElementById('player').style.animationName = "none"
   }
 })
 function sequencer() {
@@ -59,8 +61,10 @@ function sequencer() {
     index++;
   }
   slider.oninput = function() {
-  output.innerHTML = this.value;
-  Tone.Transport.bpm.value = this.value;
+    output.innerHTML = this.value;
+    Tone.Transport.bpm.value = this.value;
+    let sPerBeat = 98 / this.value;
+    document.getElementById('player').style.animationDuration = `${sPerBeat}` + "s"
   }
 }
 sequencer();

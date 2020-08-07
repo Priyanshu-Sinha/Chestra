@@ -31,6 +31,21 @@ input[type=checkbox]{
     top: 55vh;
     margin: 0px 100px;
 }
+#player{
+    position: absolute;
+    margin: 0px;
+    padding: 0px;
+    height: 280px;
+    width: 5px;
+    left: 208px;
+    top: 25px;
+    z-index: 1;
+    background-color: black;
+    animation-name: none;
+    animation-timing-function: linear;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
 .ohat{
     position: relative;
     width: 860px;
@@ -99,24 +114,24 @@ input[type=checkbox]{
     text-shadow: white 2px 2px 2px;
 }
 input[type="range"] {
-  display: block;
-  -webkit-appearance: none;
-  background-color: #bdc3c7;
-  width: 300px;
-  height: 5px;
-  border-radius: 5px;
-  margin: 0 auto;
-  outline: 0;
+    display: block;
+    -webkit-appearance: none;
+    background-color: #bdc3c7;
+    width: 300px;
+    height: 5px;
+    border-radius: 5px;
+    margin: 0 auto;
+    outline: 0;
 }
 input[type="range"]::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  background-color: #e74c3c;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  border: 2px solid white;
-  cursor: pointer;
-  transition: .3s ease-in-out;
+    -webkit-appearance: none;
+    background-color: #e74c3c;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid white;
+    cursor: pointer;
+    transition: .3s ease-in-out;
 }​
   input[type="range"]::-webkit-slider-thumb:hover {
     background-color: white;
@@ -183,4 +198,8 @@ footer{
 #mail{
     position: relative;
     left: 950px;
+}
+@keyframes player{
+    0%{left: 208px;}
+    100%{left: 1065px;}
 }
